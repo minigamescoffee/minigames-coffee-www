@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+html, body {
+  font-family: "Roboto", serif;
+}
+
+.container {
+  height: 90vh;
+  width:  100%;
+}
+
+.container-centered {
+  display: flex;
+  align-items:     center;
+  align-content:   center;
+  justify-content: center;
+}
+
+.container-90-percentage {
+  width:  90%;
+  margin: 0 auto;
+}
+
+.studio-branding-parent, .studio-details-parent {
+  width: 100%;
+}
+
+.studio-branding {
+  height: 96px;
+  width:  96px;
+  border-radius: 80%;
+}
+
+.studio-branding-parent {
+  display: flex;
+  justify-content: center;
+}
+
+.studio-details-parent .studio-details-name {
+  text-align: center;
+}
+
+.studio-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.studio-links .studio-link {
+  width: 50%;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+}
+
+.studio-links .studio-link:hover {
+  color: black;
+}
+
+.studio-links .studio-link .studio-link-icon img {
+  height: 16px;
+  width:  16px;
+}
+
+.studio-links .studio-link .studio-link-description {
+  margin-left: 3px;
+}
+
+footer {
+  margin: 35px 0 20px 0;
+}
+
+footer p {
+  text-align: right;
+}
+
+@media(max-width: 540px) {
+  .studio-links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .studio-links .studio-link {
+    width:  100%;
+    margin: 3px auto;
+  }
+}
